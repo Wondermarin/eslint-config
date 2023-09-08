@@ -1,0 +1,48 @@
+{
+  "name": "@wondermarin/eslint-config",
+  "version": "1.0.0",
+  "description": "Personal ESLint config.",
+  "author": "Wondermarin",
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/wondermarin/eslint-config",
+  "repository": "github:wondermarin/eslint-config",
+  "main": "configs/base.json",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./configs/base.json",
+    "./typescript": "./configs/typescript.json",
+    "./react": "./configs/react.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "configs"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=6",
+    "@typescript-eslint/parser": ">=6",
+    "eslint": ">=8",
+    "eslint-plugin-perfectionist": ">=2",
+    "eslint-plugin-prettier": ">=5",
+    "eslint-plugin-react": ">=7",
+    "eslint-plugin-react-hooks": ">=4",
+    "prettier": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    }
+  }
+}
