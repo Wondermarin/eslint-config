@@ -150,7 +150,7 @@
     "no-octal": "error",
     "no-octal-escape": "error",
     "no-param-reassign": "off",
-    "no-plusplus": "error",
+    "no-plusplus": "off",
     "no-proto": "error",
     "no-redeclare": "off",
     "no-regex-spaces": "error",
