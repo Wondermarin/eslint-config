@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Wondermarin/eslint-config/compare/v1.0.1...v1.0.2) (2023-10-08)
+
+
+### Bug Fixes
+
+* Disable `@typescript-eslint/no-dynamic-delete` rule ([26fd5d2](https://github.com/Wondermarin/eslint-config/commit/26fd5d28629e730eec8e1ca01b88ee82f00301e3))
+
 ## [1.0.1](https://github.com/Wondermarin/eslint-config/compare/v1.0.0...v1.0.1) (2023-10-04)
 
 
