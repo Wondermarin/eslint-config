@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Wondermarin/eslint-config/compare/v1.0.2...v1.0.3) (2023-10-24)
+
+
+### Bug Fixes
+
+* Disable `react/no-array-index-key` rule ([56dde85](https://github.com/Wondermarin/eslint-config/commit/56dde856403b2ac9964592b4fe63edb47b0db7c4))
+
 ## [1.0.2](https://github.com/Wondermarin/eslint-config/compare/v1.0.1...v1.0.2) (2023-10-08)
 
 
