@@ -2,34 +2,64 @@
   "name": "@wondermarin/eslint-config",
   "version": "1.0.3",
   "description": "Personal ESLint config.",
-  "author": "Wondermarin",
+  "homepage": "https://github.com/Wondermarin/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wondermarin/eslint-config.git"
+  },
   "license": "MIT",
-  "private": false,
-  "homepage": "https://github.com/wondermarin/eslint-config",
-  "repository": "github:wondermarin/eslint-config",
-  "main": "configs/base.json",
+  "sideEffects": false,
+  "type": "module",
   "exports": {
     "./package.json": "./package.json",
-    ".": "./configs/base.json",
-    "./typescript": "./configs/typescript.json",
-    "./react": "./configs/react.json"
+    ".": {
+      "import": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/main.js"
+      }
+    }
   },
-  "sideEffects": false,
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "files": [
-    "configs"
+    "dist"
   ],
-  "engines": {
-    "node": ">=18"
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-package-json": "^0.15.3",
+    "eslint-plugin-perfectionist": "^3.8.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "jsonc-eslint-parser": "^2.4.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.0",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "@wondermarin/prettier-config": "^1.0.0",
+    "defu": "^6.1.4",
+    "eslint": "^9.12.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jiti": "^2.3.3",
+    "prettier": "^3.3.3",
+    "tsup": "^8.3.0",
+    "tsx": "^4.16.5",
+    "typescript": "^5.6.3"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=6",
-    "@typescript-eslint/parser": ">=6",
-    "eslint": ">=8",
-    "eslint-plugin-perfectionist": ">=2",
-    "eslint-plugin-prettier": ">=5",
-    "eslint-plugin-react": ">=7",
-    "eslint-plugin-react-hooks": ">=4",
-    "prettier": ">=3"
+    "@typescript-eslint/eslint-plugin": "^8.8",
+    "@typescript-eslint/parser": "^8.8",
+    "eslint": "^9.12",
+    "eslint-plugin-react": "^7.37",
+    "eslint-plugin-react-hooks": "^4.6"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
@@ -44,5 +74,8 @@
     "eslint-plugin-react-hooks": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -1,5 +1,14 @@
 {
   "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "[javascript][typescript][json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -8,5 +17,7 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     "**/node_modules": true
-  }
+  },
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
