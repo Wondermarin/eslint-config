@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/Wondermarin/eslint-config/compare/v1.0.3...v2.0.0) (2024-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* ESLint 9
+
+### Features
+
+* ESLint 9 ([0b2cdee](https://github.com/Wondermarin/eslint-config/commit/0b2cdee5ba7347d72c3c6d52f7df7f4e053d77d2))
+
 ## [1.0.3](https://github.com/Wondermarin/eslint-config/compare/v1.0.2...v1.0.3) (2023-10-24)
 
 
