@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/Wondermarin/eslint-config/compare/v2.0.0...v2.1.0) (2024-10-15)
+
+
+### Features
+
+* Change `requireFlag` option in `require-unicode-regexp` to `u` ([6d781ba](https://github.com/Wondermarin/eslint-config/commit/6d781baf3bc04fc7f041162945368610cac71b99))
+
 ## [2.0.0](https://github.com/Wondermarin/eslint-config/compare/v1.0.3...v2.0.0) (2024-10-11)
 
 
