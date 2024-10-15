@@ -315,7 +315,7 @@ export function javascriptConfig(): IConfig[] {
         radix: ["error", "always"],
         "require-atomic-updates": ["error", { allowProperties: false }],
         "require-await": "error",
-        "require-unicode-regexp": ["error", { requireFlag: "v" }],
+        "require-unicode-regexp": ["error", { requireFlag: "u" }],
         "require-yield": "error",
         "sort-imports": "off",
         "sort-keys": "off",
