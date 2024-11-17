@@ -188,6 +188,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
           {
             ignoreArrowShorthand: false,
             ignoreVoidOperator: false,
+            ignoreVoidReturningFunctions: false,
           },
         ],
         "@typescript-eslint/no-dupe-class-members": "off",
