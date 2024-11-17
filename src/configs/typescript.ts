@@ -371,12 +371,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
             allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
             ignoreConditionalTests: true,
             ignoreMixedLogicalExpressions: true,
-            ignorePrimitives: {
-              bigint: false,
-              boolean: false,
-              number: false,
-              string: false,
-            },
+            ignorePrimitives: true,
             ignoreTernaryTests: false,
           },
         ],
