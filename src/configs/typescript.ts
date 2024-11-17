@@ -373,6 +373,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
             ignoreMixedLogicalExpressions: true,
             ignorePrimitives: true,
             ignoreTernaryTests: false,
+            ignoreBooleanCoercion: false,
           },
         ],
         "@typescript-eslint/prefer-optional-chain": [
