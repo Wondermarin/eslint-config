@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.2.0](https://github.com/Wondermarin/eslint-config/compare/v2.1.0...v2.2.0) (2024-11-17)
+
+
+### Features
+
+* Add `considerDefaultExhaustiveForUnions` option in `@typescript-eslint/switch-exhaustiveness-check` rule ([4c3ffe3](https://github.com/Wondermarin/eslint-config/commit/4c3ffe3e23070870c9aaf247e44166e9bbbfb896))
+* Add `ignoreBooleanCoercion` option in `@typescript-eslint/prefer-nullish-coalescing` rule ([a3ccad5](https://github.com/Wondermarin/eslint-config/commit/a3ccad5d96fe7a7daba54ef65493c934f9150178))
+* Add `ignoreVoidReturningFunctions` option in `@typescript-eslint/no-confusing-void-expression` rule ([470a7ce](https://github.com/Wondermarin/eslint-config/commit/470a7ce7341e714e826de1ae165210f40fc286eb))
+* Add `specialCharacters` option in `perfectionist` rules ([8d6f88b](https://github.com/Wondermarin/eslint-config/commit/8d6f88b5dc5f8b5377066e3e6ed629ff1f26d9e4))
+* Change `ignorePrimitives` option in `@typescript-eslint/prefer-nullish-coalescing` rule to `true` ([cf9bb68](https://github.com/Wondermarin/eslint-config/commit/cf9bb6852b14c1ea25cd6243114cfb5b6f1fadc4))
+
 ## [2.1.0](https://github.com/Wondermarin/eslint-config/compare/v2.0.0...v2.1.0) (2024-10-15)
 
 
