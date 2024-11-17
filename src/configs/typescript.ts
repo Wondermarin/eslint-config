@@ -437,6 +437,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
           {
             allowDefaultCaseForExhaustiveSwitch: true,
             requireDefaultForNonUnion: false,
+            considerDefaultExhaustiveForUnions: false,
           },
         ],
         "@typescript-eslint/triple-slash-reference": [
