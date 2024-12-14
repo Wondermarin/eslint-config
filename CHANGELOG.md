@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/Wondermarin/eslint-config/compare/v2.2.0...v2.3.0) (2024-12-14)
+
+
+### Features
+
+* Add `properties` in `checksVoidReturn` option in `@typescript-eslint/no-misused-promises` rule ([b9668e6](https://github.com/Wondermarin/eslint-config/commit/b9668e6be8cadbe3976d5d1fcda05f20a2175c02))
+
 ## [2.2.0](https://github.com/Wondermarin/eslint-config/compare/v2.1.0...v2.2.0) (2024-11-17)
 
 
