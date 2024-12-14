@@ -257,6 +257,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
             checksSpreads: true,
             checksVoidReturn: {
               attributes: false,
+              properties: false,
             },
           },
         ],
