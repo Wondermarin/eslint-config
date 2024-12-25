@@ -256,6 +256,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
             checksConditionals: true,
             checksSpreads: true,
             checksVoidReturn: {
+              arguments: false,
               attributes: false,
               properties: false,
             },
