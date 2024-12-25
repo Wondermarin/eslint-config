@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/Wondermarin/eslint-config/compare/v2.3.0...v2.4.0) (2024-12-25)
+
+
+### Features
+
+* Add `arguments` in `checksVoidReturn` option in `@typescript-eslint/no-misused-promises` rule ([be7969e](https://github.com/Wondermarin/eslint-config/commit/be7969e41adc2c1a22f350d46e00eab0e0eb85e5))
+
 ## [2.3.0](https://github.com/Wondermarin/eslint-config/compare/v2.2.0...v2.3.0) (2024-12-14)
 
 
