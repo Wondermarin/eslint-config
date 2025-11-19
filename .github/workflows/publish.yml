@@ -5,8 +5,8 @@ on:
     types: [published]
 
 permissions:
-  contents: read
   id-token: write
+  contents: read
 
 jobs:
   build-and-publish:
@@ -36,5 +36,3 @@ jobs:
 
       - name: Publish
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
