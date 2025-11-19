@@ -1,5 +1,6 @@
 import { defu } from "defu";
 
+import { findProjectRoot } from "./utils/find-project-root";
 import { javascriptConfig } from "./configs/javascript";
 import { typescriptConfig } from "./configs/typescript";
 import { stylisticConfig } from "./configs/stylistic";
@@ -46,19 +47,18 @@ async function wondermarin(options?: IWondermarinOptions) {
     json: true,
   } satisfies IWondermarinOptions);
 
-  const config = [...baseConfig()];
+  const projectRoot = findProjectRoot();
 
-  if (options.javascript) config.push(...javascriptConfig());
+  const configs = await Promise.all([
+    baseConfig(projectRoot),
+    options.javascript ? javascriptConfig() : [],
+    options.typescript ? typescriptConfig(projectRoot) : [],
+    options.stylistic ? stylisticConfig() : [],
+    options.json ? jsonConfig() : [],
+    options.react ? reactConfig() : [],
+  ]);
 
-  if (options.typescript) config.push(...(await typescriptConfig()));
-
-  if (options.stylistic) config.push(...(await stylisticConfig()));
-
-  if (options.json) config.push(...(await jsonConfig()));
-
-  if (options.react) config.push(...(await reactConfig()));
-
-  return config;
+  return configs.flat();
 }
 
 export default wondermarin;

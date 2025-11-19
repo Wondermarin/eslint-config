@@ -7,7 +7,7 @@ import { EGlob } from "../constants/glob";
 
 import type { IConfig } from "../types/config";
 
-export function baseConfig(): IConfig[] {
+export function baseConfig(projectRoot: string): IConfig[] {
   return [
     {
       name: "wondermarin/eslint-config",
@@ -27,7 +27,7 @@ export function baseConfig(): IConfig[] {
     },
     {
       name: "wondermarin/eslint-config/ignores",
-      ignores: includeIgnoreFile(join(process.cwd(), ".gitignore")).ignores,
+      ignores: includeIgnoreFile(join(projectRoot, ".gitignore")).ignores,
     },
   ];
 }

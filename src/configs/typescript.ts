@@ -3,7 +3,7 @@ import { EGlob } from "../constants/glob";
 
 import type { IConfig } from "../types/config";
 
-export async function typescriptConfig(): Promise<IConfig[]> {
+export async function typescriptConfig(projectRoot: string): Promise<IConfig[]> {
   const [typescriptParser, typescriptPlugin] = await Promise.all([
     interopDefault(import("@typescript-eslint/parser")),
     interopDefault(import("@typescript-eslint/eslint-plugin")),
@@ -17,7 +17,7 @@ export async function typescriptConfig(): Promise<IConfig[]> {
         parser: typescriptParser,
         parserOptions: {
           project: true,
-          tsconfigRootDir: process.cwd(),
+          tsconfigRootDir: projectRoot,
         },
       },
       plugins: {
