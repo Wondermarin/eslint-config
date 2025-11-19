@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1](https://github.com/Wondermarin/eslint-config/compare/v2.4.0...v2.4.1) (2025-11-19)
+
+
+### Bug Fixes
+
+* Add `findProjectRoot` to correctly resolve project root ([b5c10f2](https://github.com/Wondermarin/eslint-config/commit/b5c10f20e823d54b801f3d276fafd9b684f56d89))
+
 ## [2.4.0](https://github.com/Wondermarin/eslint-config/compare/v2.3.0...v2.4.0) (2024-12-25)
 
 
