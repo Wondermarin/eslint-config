@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/Wondermarin/eslint-config/compare/v2.4.1...v2.5.0) (2026-01-05)
+
+
+### Features
+
+* Remove `@stylistic/eslint-plugin` from `stylistic` config ([ffbe00d](https://github.com/Wondermarin/eslint-config/commit/ffbe00d6a6c55e394490d811983f87317372bfae))
+
 ## [2.4.1](https://github.com/Wondermarin/eslint-config/compare/v2.4.0...v2.4.1) (2025-11-19)
 
 
