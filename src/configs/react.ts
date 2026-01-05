@@ -10,7 +10,6 @@ import type { IConfig } from "../types/config";
 export async function reactConfig(): Promise<IConfig[]> {
   const [reactPlugin, reactHooksPlugin] = await Promise.all([
     interopDefault(import("eslint-plugin-react")),
-    // @ts-expect-error missing types
     interopDefault(import("eslint-plugin-react-hooks")),
   ]);
 

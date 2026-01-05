@@ -50,8 +50,8 @@ async function wondermarin(options?: IWondermarinOptions) {
   const projectRoot = findProjectRoot();
 
   const configs = await Promise.all([
-    baseConfig(projectRoot),
-    options.javascript ? javascriptConfig() : [],
+    Promise.resolve(baseConfig(projectRoot)),
+    Promise.resolve(options.javascript ? javascriptConfig() : []),
     options.typescript ? typescriptConfig(projectRoot) : [],
     options.stylistic ? stylisticConfig() : [],
     options.json ? jsonConfig() : [],
